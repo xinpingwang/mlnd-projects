@@ -13481,10 +13481,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>回答:</strong>
-样本 0 主要销售 Milk 和 Grocery 和 Detergents_Paper，很可能是杂货铺
-样本 1 主要销售 Fresh 和 Frozen 等食物，很可能是餐饮类业务
-样本 2 主要销售 Fresh 其他品类的相对较少且比较均衡，可能是主营 Fresh 的杂货店</p>
+<p><strong>回答:</strong>&lt;/br&gt;
+样本 0 中除了 Fresh 外，其他产品的购买量都大于数据描述中对应的中位数，Milk 和 Grocery 更是超过了 75% ，很可能是个大型超市&lt;/br&gt;
+样本 1 中 Fresh 和 Frozen 等的销量超过了 75% 的客户，可能一家流行的快餐店&lt;/br&gt;
+样本 2 中 Fresh、Milk、Grocery、Detergents_Paper 和 Delicatessen 的销量都超过了 50% 的客户，Fresh 更是接近 3/4 分位，而 Frozen 的销量相对较少，可能是主营 Fresh 的杂货店</p>
 
 </div>
 </div>
@@ -13575,7 +13575,7 @@ div#notebook {
 <ol>
 <li>我尝试预测数据的第一个特征：Fresh；</li>
 <li>预测得分为 -0.58；</li>
-<li>由于对该特征的预测得分小于 0，表示模型无法拟合数据，即：无法通过其他特征来预测 Fresh，也无法通过 Fresh 来预测其他特征，所以这个特征对于区分用户消费习惯来说是不必要的。</li>
+<li>由于对该特征的预测得分小于 0，表示模型无法拟合数据，即：无法通过其他特征来预测 Fresh，也无法通过 Fresh 来预测其他特征，所以这个特征可以用于区分用户的消费习惯；相反，如果某个特征和某几个其他特征的相关性较高，即：该特征可以通过其他特征进行预测，则该特征也没有其存在的价值，不能用于区分用户的消费习惯。</li>
 </ol>
 
 </div>
