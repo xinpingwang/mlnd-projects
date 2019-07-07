@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# mlnd-projects
-=======
 # 机器学习纳米学位
 # 监督学习
 ## 项目: 为CharityML寻找捐献者
@@ -56,4 +53,3 @@ jupyter notebook finding_donors.ipynb
 **目标变量**
 
 - `income`: 一个类别变量，表示收入属于那个类别，允许的值有 {<=50K, >50K}
->>>>>>> p2/master
